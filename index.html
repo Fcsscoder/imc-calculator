@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <script src="./js/scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-container">
+                
+            </nav>
+        </header>
+        <div id="calc-container">
+            <h2>Calculadora de IMC</h2>
+            <form id="imc-form">
+                <div class="form-inputs">
+                    <div class="form-control">
+                        <label for="height">Altura</label>
+                        <input type="text" name="height" id="height" placeholder="1,75m">
+                    </div>
+                </div>
+                <div class="form-inputs">
+                    <div class="form-control">
+                        <label for="weight" id="weight-label">Peso</label>
+                        <input type="text" name="weight" id="weight" placeholder="70kg">
+                    </div>
+                </div>
+                <div class="actions-control">
+                    <button class="btn" id="calc-btn">Calcular</button>
+                    <button class="btn" id="clear-btn">Limpar</button>
+                </div>
+            </form>
+        </div>
+        <div id="result-container" class="hide">
+            <p id="imc-number">Seu IMC: <span></span></p>
+            <p id="imc-info">Situação atual: <span></span></p>
+            <h3>Confira as classificações:</h3>
+            <div id="imc-table"></div>
+            <div id="imc-data"></div>
+            <button id="back-btn">Voltar</button>
+        </div>
+    </div>
+</body>
+</html>
