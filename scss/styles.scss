@@ -9,8 +9,10 @@
 }
 
 body {
+    background: url(/img/background2.jpg);
     background-position: top;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,4 +194,11 @@ body {
 
 .high {
     color: #db1912;
+}
+
+
+@media screen and (max-width: 590px){
+    body {
+        background-position: top;
+    }
 }
